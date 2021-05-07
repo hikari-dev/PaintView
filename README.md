@@ -2,7 +2,7 @@
 
 ## Using in your projects
 
-#### Gradle
+### Gradle
 
 ```groovy
 implementation 'io.github.hikari-dev:paintview:1.0.0'
