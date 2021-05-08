@@ -26,5 +26,6 @@ public class MainActivity extends AppCompatActivity {
             return Unit.INSTANCE;
         }));
         binding.btnUndo.setOnClickListener(v -> binding.paintView.undo());
+        binding.btnClear.setOnClickListener(v -> binding.paintView.clear());
     }
 }

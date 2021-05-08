@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnConfirm"
         android:layout_width="wrap_content"
@@ -14,8 +13,18 @@
         android:layout_marginBottom="16dp"
         android:text="确定"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnUndo" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清除"
+        app:layout_constraintBottom_toBottomOf="@+id/btnConfirm"
         app:layout_constraintEnd_toStartOf="@+id/btnUndo"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnConfirm" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnUndo"
@@ -23,8 +32,8 @@
         android:layout_height="wrap_content"
         android:text="撤销"
         app:layout_constraintBottom_toBottomOf="@+id/btnConfirm"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnConfirm"
+        app:layout_constraintEnd_toStartOf="@+id/btnConfirm"
+        app:layout_constraintStart_toEndOf="@+id/btnClear"
         app:layout_constraintTop_toTopOf="@+id/btnConfirm" />
 
     <dev.hikari.PaintView

@@ -74,6 +74,11 @@ class PaintView(context: Context, attrs: AttributeSet) : View(context, attrs) {
         }
     }
 
+    fun clear() {
+        paths.clear()
+        invalidate()
+    }
+
     private inline val Float.dp2px
         get() = TypedValue.applyDimension(
             TypedValue.COMPLEX_UNIT_DIP,
